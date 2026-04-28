@@ -273,7 +273,7 @@ function HeroSection({
   scrollTo: (id: string) => void;
 }) {
   return (
-    <section className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 sm:pt-28">
+    <section className="relative mx-auto max-w-7xl px-6 pb-12 pt-10 sm:pt-16">
       {/* Ambient radial glow behind heading */}
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 flex justify-center">
         <div className="h-[640px] w-[1100px] rounded-full bg-white/[0.035] blur-[130px]" />
@@ -341,7 +341,7 @@ function HeroSection({
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1 text-[12px] font-medium text-white">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />
-            Federated Live Learning · Accountable AI
+            Generative Operational Logistics × Enterprise Management
           </span>
         </motion.div>
 
@@ -351,10 +351,8 @@ function HeroSection({
           transition={{ duration: 0.6, delay: 0.05 }}
           className="text-[40px] font-semibold leading-[1.08] tracking-tight sm:text-[58px] lg:text-[74px]"
         >
-          <span className="text-w-cream">Generative Operational</span>
-          <br />
           <span className="bg-gradient-to-r from-white via-white/80 to-white bg-clip-text text-transparent">
-            Logistics × Enterprise Management
+            GOLEM
           </span>
         </motion.h1>
 
@@ -415,7 +413,7 @@ function HeroSection({
 
 function NewWaySection({ reducedMotion }: { reducedMotion: boolean }) {
   return (
-    <section className="relative mx-auto max-w-7xl px-6 py-28">
+    <section className="relative mx-auto max-w-7xl px-6 py-12">
       <div className="grid items-center gap-16 lg:grid-cols-2">
         {/* Left */}
         <motion.div
@@ -522,8 +520,8 @@ function CapabilitiesSection({ reducedMotion }: { reducedMotion: boolean }) {
   ];
 
   return (
-    <section id="products" className="mx-auto max-w-7xl px-6 py-28">
-      <div className="section-divider mb-28" />
+    <section id="products" className="mx-auto max-w-7xl px-6 py-12">
+      <div className="section-divider mb-12" />
 
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-[12px] font-semibold uppercase tracking-[0.15em] text-white">Core Platform</p>
@@ -923,8 +921,8 @@ function WorkflowStepsSection({ reducedMotion }: { reducedMotion: boolean }) {
   ];
 
   return (
-    <section id="how" className="mx-auto max-w-7xl px-6 py-28">
-      <div className="section-divider mb-28" />
+    <section id="how" className="mx-auto max-w-7xl px-6 py-12">
+      <div className="section-divider mb-12" />
 
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-[12px] font-semibold uppercase tracking-[0.15em] text-white">How it works</p>
@@ -1004,8 +1002,8 @@ function WorkflowStepsSection({ reducedMotion }: { reducedMotion: boolean }) {
 
 function TestimonialSection({ reducedMotion }: { reducedMotion: boolean }) {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-28">
-      <div className="section-divider mb-28" />
+    <section className="mx-auto max-w-7xl px-6 py-12">
+      <div className="section-divider mb-12" />
       <motion.div
         initial={reducedMotion ? false : { opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -1072,7 +1070,7 @@ function LifecycleSection({ reducedMotion }: { reducedMotion: boolean }) {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl px-6 py-28">
+    <section className="mx-auto max-w-7xl px-6 py-12">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-[12px] font-semibold uppercase tracking-[0.15em] text-white">Platform Depth</p>
         <h2 className="mt-4 text-[32px] font-semibold leading-tight tracking-tight text-w-cream sm:text-[40px]">
@@ -1183,7 +1181,7 @@ function DemoForm() {
 
 function CTASection() {
   return (
-    <section id="cta" className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-28 pt-10">
+    <section id="cta" className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-10">
       {/* Ambient glow */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center">
         <div className="h-[280px] w-[800px] rounded-full bg-white/[0.025] blur-[80px]" />
