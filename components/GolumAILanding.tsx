@@ -332,19 +332,6 @@ function HeroSection({
       </div>
 
       <div className="relative mx-auto max-w-4xl text-center">
-        {/* Beta badge */}
-        <motion.div
-          initial={reducedMotion ? false : { opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-7 inline-flex"
-        >
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1 text-[12px] font-medium text-white">
-            <span className="h-1.5 w-1.5 rounded-full bg-white" />
-            Generative Operational Logistics × Enterprise Management
-          </span>
-        </motion.div>
-
         <motion.h1
           initial={reducedMotion ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -355,6 +342,20 @@ function HeroSection({
             GOLEM
           </span>
         </motion.h1>
+
+        {/* Beta badge */}
+        <motion.div
+          initial={reducedMotion ? false : { opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mt-6 inline-flex"
+        >
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1 text-[12px] font-medium text-white">
+            <span className="h-1.5 w-1.5 rounded-full bg-white" />
+            Generative Operational Logistics × Enterprise Management
+          </span>
+        </motion.div>
+
 
         <motion.p
           initial={reducedMotion ? false : { opacity: 0, y: 12 }}
