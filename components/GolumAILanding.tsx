@@ -336,7 +336,7 @@ function HeroSection({
           initial={reducedMotion ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="text-[40px] font-semibold leading-[1.08] tracking-tight sm:text-[58px] lg:text-[74px]"
+          className="mt-20 text-[40px] font-semibold leading-[1.08] tracking-tight sm:text-[58px] lg:text-[74px]"
         >
           <span className="bg-gradient-to-r from-white via-white/80 to-white bg-clip-text text-transparent">
             GOLEM
